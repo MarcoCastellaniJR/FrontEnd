@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: space-between;
+}
+
+body {
+    background-color: blueviolet;
+
+}
+
+footer {
+    background-color: blue;
+}
+
+main {
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    flex-direction: row-reverse;
+    
+    
+}
+
+
+.FB {
+    background-color: aliceblue;
+    flex-direction: row-reverse;
+    height: 50px;
+    
+}
