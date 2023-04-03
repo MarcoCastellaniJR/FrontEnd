@@ -1,0 +1,42 @@
+.topicos {
+    background: var(--azul-degrade);
+    text-align: center;
+}
+.titulo__topico {
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1em 0;
+}
+.lista__topico {
+    display: flex;
+    /** flex-wrap que faz com que occorra a quebra de linha
+    pada o display não aumentar o tamanho da tela e ir se 
+    adaptando e jogando para baixo o conteudo**/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lista__topico__item {
+    justify-content: center;
+    margin: 0.5em 0.5em;
+    padding: 1em 0.5em;
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+.topico__link{
+    color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .titulo__topico {
+        font-size: 1.5rem;
+    }
+    .topico__link{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 1278px){
+    .topicos {
+        padding: 1em 30vw;
+    }
+}
