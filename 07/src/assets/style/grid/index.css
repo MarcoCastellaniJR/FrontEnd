@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    /* ! GRID NAMES !
+    cada nome dentro da aspas seria uma seção do grid, 1x1 aside 1x2 header 2x1 side 2x2 main */
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    grid-template-columns: auto 1fr;
+}
+
+.cabecalho {
+    grid-area: header;
+}
+.menu-lateral {
+    grid-area: aside;
+}
+
+.principal {
+    grid-area: main;
+}
