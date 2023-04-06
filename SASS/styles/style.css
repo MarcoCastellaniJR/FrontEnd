@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+}
+.container .esquerdo {
+  width: 50%;
+  background-color: #fff;
+}
+.container .esquerdo .texto {
+  font-size: 2rem;
+  margin-top: 40%;
+  color: #8f8f8f;
+}
+.container .direito {
+  width: 50%;
+  background-color: #8f8f8f;
+}
+.container .direito .texto {
+  font-size: 2rem;
+  margin-top: 40%;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

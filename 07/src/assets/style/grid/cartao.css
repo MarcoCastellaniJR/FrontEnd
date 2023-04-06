@@ -1,0 +1,94 @@
+.secao-horizontal .cartao  {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 0.5rem;
+    margin: 15px;
+}
+
+.secao-horizontal .cartao__imagem {
+    /* 
+    a sintaxe abaixo repassa internamente exatamente esses valores
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4; 
+    grid-column-end: 2;
+    */
+    grid-area: 1/1/4/2;
+}
+
+.secao-horizontal .cartao__botao{
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.secao-horizontal .cartao__titulo {
+    align-self: end;
+}
+
+
+
+
+
+
+/* ! SEÇAO VERTICAL ! */
+
+.secao {
+    display: grid;
+    align-items: center;
+}
+
+.secao-horizontal {
+    grid-template-rows: 120px auto;
+
+}
+
+.secao-horizontal .secao__cartoes{
+    display: grid;
+    /* !! como colocar min e max nas divisoes da coluna !!  */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(348px, 100%/6)), 1fr));
+}
+
+.secao-vertical {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 2fr;
+}
+
+.secao-vertical .secao__cartoes {
+    grid-column: 1/3;
+}
+.secao-vertical .secao__cartoes {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(165px, 100%/4)), 1fr));
+}
+
+.secao-vertical .cartao {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    margin: 15px;
+}
+.secao-vertical .cartao__imagem {
+    margin: auto;
+}
+
+
+/* ! MENU.CSS MENU LATERAL !  */
+
+
+.menu-lateral{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    row-gap: 2rem;
+}
+
+.menu-lateral__logo {
+    justify-self: center;
+}
+
+/* ! NAVBAR.CSS !  */
+
+.navbar__items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
